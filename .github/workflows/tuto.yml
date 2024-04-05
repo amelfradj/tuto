@@ -2,7 +2,7 @@ name: hello-world
 on:
   push:
     branches: ["master"]
-  fork: 
+  fork:
 
 jobs:
   tuto1:
@@ -10,3 +10,8 @@ jobs:
     steps:
       - name: tuto-step1
         run: echo "Hello World!"
+  tuto2:
+    runs-on: macos-latest
+    steps:
+      - name: tuto2-step
+        run: echo "Hello back"
