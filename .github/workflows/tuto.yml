@@ -1,0 +1,12 @@
+name: hello-world
+on:
+  push:
+    branches: ["master"]
+  fork: 
+
+jobs:
+  tuto1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: tuto-step1
+        run: echo "Hello World!"
